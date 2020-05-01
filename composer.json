@@ -1,6 +1,7 @@
 {
 	"name": "usertests/user-phpunit",
 	"description": "This is a test project for testing how Github Actions works",
+	"license": "MIT",
 	"authors": [
 		{
 			"name": "Victor Allen",
