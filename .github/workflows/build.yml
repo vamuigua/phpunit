@@ -20,6 +20,9 @@ jobs:
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress --no-suggest
 
+      - name: Check Coding standard using PHP_CodeSniffer
+        run: phpcs --standard=PSR2 ./tests
+
       - name: Run Tests
         run: ./vendor/bin/phpunit
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
