@@ -1,4 +1,12 @@
 {
+	"name": "usertests/user-phpunit",
+	"description": "This is a test project for testing how Github Actions works",
+	"authors": [
+		{
+			"name": "Victor Allen",
+			"email": "vamuigua@gmail.com"
+		}
+	],
 	"require": {
 		"phpunit/phpunit": "^9.1",
 		"squizlabs/php_codesniffer": "3.*"
