@@ -2,29 +2,27 @@ name: PHPUnit Github Actions Test Build
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
-
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Validate composer.json and composer.lock
-      run: composer validate
+      # - name: Validate composer.json and composer.lock
+      #   run: composer validate
 
-    - name: Install dependencies
-      run: composer install --prefer-dist --no-progress --no-suggest
-    
-    - name: Run Tests
-      run: ./vendor/bin/phpunit
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress --no-suggest
 
+      - name: Run Tests
+        run: ./vendor/bin/phpunit
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
-
     # - name: Run test suite
     #   run: composer run-script test
