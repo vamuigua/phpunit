@@ -1,11 +1,13 @@
 <?php
 
-class SampleTest extends PHPUnit\Framework\TestCase
+namespace Tests;
+
+use PHPUnit\Framework\TestCase;
+
+class SampleTest extends TestCase
 {
     public function testTrueAssertsToTrue()
     {
         $this->assertTrue(true);
     }
 }
-
-?>

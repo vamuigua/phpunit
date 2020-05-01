@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: Build
+    name: Build User Model Test
     runs-on: ubuntu-latest
 
     steps:
