@@ -1,7 +1,4 @@
 {
-	"name": "phpunit/phpunit",
-	"description": "This package is used to test Github Actions",
-	"license": "MIT",
 	"require": {
 		"phpunit/phpunit": "^9.1"
 	},
